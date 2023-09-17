@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { useEffect, useState } from "react";
-import { profileColors } from "./utils/constants";
+import { profileColors } from "../utils/constants";
 import { IoLogoGoogle, IoLogoFacebook } from "react-icons/io";
 import { auth, db } from "@/firebase/firebase";
 // import Loader from "./components/Loader";

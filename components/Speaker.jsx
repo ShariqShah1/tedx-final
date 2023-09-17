@@ -37,7 +37,7 @@ const Speaker = () => {
               <div className="p-5 flex-[1.5] space-y-1 lg:py-9 text-justify hyphens-auto ">
                 <h1 className="text-3xl ">
                   <span className="font-semibold">{speakerDetails.fName}</span>
-                  <span className="font-extralight">
+                  <span className="font-extralight ml-2">
                     {speakerDetails.lName}
                   </span>
                 </h1>
@@ -102,7 +102,7 @@ const Speaker = () => {
           {/* slider images all end*/}
           {/* right */}
           <div
-            className="absolute bottom-14 left-3 rounded-full bg-black cursor-pointer"
+            className="absolute bottom-14 left-3 rounded-full bg-black cursor-pointer h-8 w-8 flex items-center justify-center"
             onClick={() => navigation("left")}
           >
             <BsArrowLeftCircle className="text-2xl text-red-600" />
