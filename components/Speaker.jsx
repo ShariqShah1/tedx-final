@@ -5,6 +5,8 @@ import React, { useRef, useState } from "react";
 import { BsArrowRightCircle, BsArrowLeftCircle } from "react-icons/bs";
 import UpperDesign from "./UpperDesign";
 import Wrapper from "./Wrapper";
+import RevealX from "./RevealX";
+import RevealY from "./RevealY";
 const Speaker = () => {
   const [imageId, setImageId] = useState(1);
   const carouselRef = useRef();
@@ -31,10 +33,12 @@ const Speaker = () => {
         {/* slider */}
         <div className="relative p-4 w-full space-y-4 lg:space-y-6">
           {/* slider card */}
+          <RevealX>
           <div className="lg:px-20 ">
-            <div className="w-full flex bg-[#c31f26] rounded-md flex-col-reverse lg:flex-row ">
+            
+            <div className="w-full flex bg-[#c31f26] rounded-md flex-col-reverse lg:flex-row lg:min-h-[450px]">
               {/* desc */}
-              <div className="p-5 flex-[1.5] space-y-1 lg:py-9 text-justify hyphens-auto ">
+              <div className="p-5 flex-[1.5] space-y-1 lg:py-9 md:text-justify hyphens-auto ">
                 <h1 className="text-3xl ">
                   <span className="font-semibold">{speakerDetails.fName}</span>
                   <span className="font-extralight ml-2">
@@ -69,15 +73,17 @@ const Speaker = () => {
               </div>
             </div>
           </div>
+          </RevealX>
           {/* slider card end*/}
           {/* slider images all end*/}
+          <RevealY>
           <div
-            className="relative overflow-hidden flex items-center w-full px-6 gap-x-10 py-2"
+            className="relative overflow-hidden flex items-center w-full px-6 gap-x-10 py-2 md:justify-center"
             ref={carouselRef}
           >
             {speakers.map((speaker) => (
               <div
-                className="relative w-[100px] h-[100px] flex-shrink-0 rounded-full cursor-pointer"
+                className="relative w-[100px] h-[100px] flex-shrink-0 rounded-full cursor-pointer "
                 key={speaker.id}
                 onClick={() => setImageId(speaker.id)}
               >
@@ -86,30 +92,31 @@ const Speaker = () => {
                   fill
                   alt="image"
                   className={cn(
-                    "object-top overflow-hidden object-cover rounded-full w-full ",
+                    " object-top overflow-hidden object-cover rounded-full w-full ",
                     speaker.id === imageId ? "grayscale-0" : "grayscale"
                   )}
                 />
                 <div
                   className={cn(
-                    "absolute w-[100px] h-[100px] ring-4 ring-offset-4 rounded-full",
+                    "absolute  w-[100px] h-[100px] ring-4 ring-offset-4 rounded-full",
                     speaker.id === imageId ? "ring-red-500" : "ring-transparent"
                   )}
                 />
               </div>
             ))}
           </div>
+          </RevealY>
           {/* slider images all end*/}
           {/* right */}
           <div
-            className="absolute bottom-14 left-3 rounded-full bg-black cursor-pointer h-8 w-8 flex items-center justify-center"
+            className="md:hidden flex absolute bottom-14 left-3 rounded-full bg-black cursor-pointer h-8 w-8  items-center justify-center "
             onClick={() => navigation("left")}
           >
             <BsArrowLeftCircle className="text-2xl text-red-600" />
           </div>
           {/* left */}
           <div
-            className="absolute  bottom-14 right-3 rounded-full bg-black cursor-pointer"
+            className="md:hidden flex absolute  bottom-14 right-3 rounded-full bg-black cursor-pointer"
             onClick={() => navigation("right")}
           >
             <BsArrowRightCircle className="text-2xl text-red-600" />

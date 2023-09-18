@@ -5,6 +5,7 @@ import HeroBanner from "@/components/HeroBanner";
 import Introduction from "@/components/Introduction";
 import Navbar from "@/components/Navbar";
 import Speaker from "@/components/Speaker";
+import Sponsor from "@/components/Sponsor";
 import { cn } from "@/lib/utils";
 import { Montserrat } from "next/font/google";
 
@@ -14,7 +15,7 @@ export default function Home() {
   
 
   return (
-    <div className={ `overflow-hidden ${cn("bg-black", montserrat.className)}`}>
+    <div className={ `overflow-hidden ${cn("bg-black " , montserrat.className)}`}>
        
       <div id="home" className="w-full">
         <Navbar />
@@ -30,6 +31,9 @@ export default function Home() {
       </div>
       <div id="About" className="w-full">
         <About />
+      </div>
+      <div id="Sponsor" className="w-full">
+        <Sponsor/>
       </div>
       <div id="Contact" className="w-full">
         <Contact />

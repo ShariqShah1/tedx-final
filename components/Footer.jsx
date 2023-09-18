@@ -31,27 +31,22 @@ const Footer = () => {
           <div className="lg:w-1/2 py-4 lg:pl-28 text-justify">
             <h1 className="font-bold text-xl md:text-2xl lg:text-3xl">Follow Us On Social Media</h1>
             <div className="py-5 lg:space-x-6 flex flex-wrap gap-x-4 gap-y-4 lg:gap-0">
-              <a href="">
+              <a href="https://www.facebook.com/tedxsmiu" target="_blank">
                 <span className="w-16 h-16  rounded-full flex items-center justify-center p-4 ring-2 ring-transparent ring-offset-2 transition-all hover:scale-110">
                   <FaFacebookF size={45} />
                 </span>
               </a>
-              <a href="">
+              <a href="https://www.instagram.com/tedxsmiu" target="_blank">
                 <span className="w-16 h-16 rounded-full flex items-center justify-center p-4 ring-2 ring-transparent ring-offset-2 transition-all hover:scale-110">
                   <ImInstagram size={45} />
                 </span>
               </a>
-              <a href="">
+              <a href="https://www.twitter.com/tedxsmiu" target="_blank">
                 <span className="w-16 h-16 rounded-full flex items-center justify-center p-4 ring-2 ring-transparent ring-offset-2 transition-all hover:scale-110">
                   <FaTwitter size={45} />
                 </span>
               </a>
-              <a href="">
-                <span className="w-16 h-16 rounded-full flex items-center justify-center p-4 ring-2 ring-transparent ring-offset-2 transition-all hover:scale-110">
-                  <HiOutlineMail size={45} />
-                </span>
-              </a>
-              <a href="">
+              <a href="https://www.linkedin.com/company/tedx-smiu/" target="_blank">
                 <span className="w-16 h-16 rounded-full flex items-center justify-center p-4 ring-2 ring-transparent ring-offset-2 transition-all hover:scale-110">
                   <FaLinkedinIn size={45} />
                 </span>

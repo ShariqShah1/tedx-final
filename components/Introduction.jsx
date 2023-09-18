@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Wrapper from "./Wrapper";
 import UpperDesign from "./UpperDesign";
+import RevealX from "./RevealX";
 
 const Introduction = () => {
   return (
@@ -19,9 +20,11 @@ const Introduction = () => {
           </div>
           <div className="relative text-white lg:aspect-square lg:flex-1 h-full lg:h-auto z-[2]">
             {/* for mobile image */}
+            
             <div className="absolute w-full h-full lg:hidden opacity-30 bg-[url('/assets/xlogo.jpg')] bg-center bg-no-repeat bg-cover -z-[1]"></div>
             
             <div className="flex flex-col justify-center px-4 md:px-5 lg:px-6 lg:gap-y-4  font-medium text-justify hyphens-auto h-full opacity-100 z-0">
+            <RevealX>
               <p className="text-xl">
                 Welcome to TEDx SMIU, an independently organized TED event
                 hosted by Sindh Madressatul Islam University (SMIU) where ideas
@@ -38,6 +41,7 @@ const Introduction = () => {
                 insights, ignite your curiosity, and be part of a community that
                 fosters change.
               </p>
+              </RevealX>
             </div>
           </div>
         </div>

@@ -77,7 +77,8 @@ const Navbar = () => {
             )}
 
             <a
-              href="#"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdwEuDNvmb-B9frjp05G6lXEFHjzEktn7YbTxDLl1AiHNL-kA/viewform?pli=1"
+              target="_blank"
               className="relative border-2 py-2 px-1 lg:py-2 lg:px-4 lg:tracking-widest lg:uppercase border-[#B81D21] text-sm lg:text-lg
                text-white transition-all z-[1] bg-[#b81d21] rounded-xl lg:rounded-sm
                after:absolute after:bottom-0 after:left-0 after:w-full after:h-full after:bg-[#b81d21] after:-z-[2] lg:after:rounded-sm after:rounded-xl

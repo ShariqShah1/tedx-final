@@ -1,20 +1,26 @@
 import React from "react";
 import Wrapper from "./Wrapper";
-
+import RevealX from "./RevealX";
+import RevealY from "./RevealY";
 
 const HeroBanner = () => {
   const TargetWithNames = () => {
     return (
       <div className="flex flex-col items-center w-full justify-center h-[80%] uppercase">
-        <h1 className="text-[30px] lg:text-[88px] font-bold tracking-wide " id="explore">
-          Exploring
-        </h1>
-        <h1
-          className="text-[24px] lg:text-[80px] font-bold  lg:leading-tight tracking-wide"
-          id="dream"
-        >
-          Dreams
-        </h1>
+        <RevealX>
+          <h1
+            className="text-[30px] lg:text-[88px] font-bold tracking-wide "
+            id="explore"
+          >
+            Exploring
+          </h1>
+          <h1
+            className="text-[24px] lg:text-[80px] font-bold  lg:leading-tight tracking-wide"
+            id="dream"
+          >
+            Dreams
+          </h1>
+        </RevealX>
       </div>
     );
   };
@@ -30,12 +36,14 @@ const HeroBanner = () => {
       >
         <div className="w-full h-full bg-[#B81D21]/[0.4] ">
           <TargetWithNames />
+          <RevealY>
           <div className="w-full h-full flex flex-col items-center py-2">
             <h3 className="text-[25px] font-normal">
               13<sup>th</sup> September 2023
             </h3>
             <h3 className="text-[25px] font-bold ">SMIU Karachi</h3>
           </div>
+          </RevealY>
         </div>
       </div>
     </Wrapper>
